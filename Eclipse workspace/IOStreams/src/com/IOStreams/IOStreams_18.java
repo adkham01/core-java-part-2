@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.Random;
+
 class FilesInJava {
 	void method_1() throws IOException {
 		File f = new File("D:/Java workplaces/FileOutputStream/file1.txt");
@@ -76,6 +76,7 @@ class FilesInJava {
 		f.writeFloat(865.23f);
 		f.writeUTF("Hyd");
 		f.seek(0);
+		f.close();
 		System.out.println("Employee Details");
 		System.out.println("--------------------------");
 		System.out.println("Employee ID     : "+f.readInt());

@@ -41,7 +41,7 @@ public class IOStreams_14 {
 	public static void main(String[] args) throws Exception {
 		FileOutputStream fos = new FileOutputStream("D:/Java workplaces/FileOutputStream/user.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
-		User ur = new User();
+		User85 ur = new User85();
 		ur.setUid("A-111");
 		ur.setUsname("Adham");
 		ur.setUpwd("123456");
