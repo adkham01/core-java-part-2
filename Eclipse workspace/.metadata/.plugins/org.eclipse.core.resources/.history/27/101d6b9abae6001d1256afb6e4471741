@@ -1,0 +1,36 @@
+package com.Edabit;
+class Class_1 {
+	void warOfNumbers() {
+		
+	}
+}
+public class Edabit_1 {
+
+	public static void main(String[] args) {
+		int[] a = {2, 8, 7, 5};
+		System.out.println(warOfNumbers(a));
+		
+	}
+	public int warOfNumbers(int[] arry) {
+		int odd = 0;
+		int even = 0;
+		int result;
+		for(int i = 0; i < arry.length; i++) {
+			if(arry[i] % 2 == 0) {
+				even += arry[i];
+			}
+			else {
+				odd += arry[i];
+			}
+		}
+		if (odd > even) {
+			result = odd;
+		}
+		else {
+			result = even;
+		}
+		return result;
+	}
+
+
+}

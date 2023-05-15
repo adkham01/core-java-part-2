@@ -1,0 +1,20 @@
+package com.IOStreams;
+
+import java.util.Arrays;
+
+class A1 {
+	void method1() {
+		String data = "Adham";
+		byte[] b = data.getBytes();
+		System.out.println(Arrays.toString(b));
+	}
+}
+public class IOStreams_1 {
+
+	public static void main(String[] args) {
+		A1 a = new A1();
+		a.method1();
+
+	}
+
+}

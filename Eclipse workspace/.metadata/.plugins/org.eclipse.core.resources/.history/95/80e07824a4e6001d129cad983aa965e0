@@ -1,0 +1,26 @@
+package com.IOStreams;
+
+import java.io.FileOutputStream;
+import java.util.Arrays;
+
+class A1 {
+	void method1() {
+		String data = "Adham";
+		byte[] b = data.getBytes();
+		System.out.println(Arrays.toString(b));
+	}
+}
+public class IOStreams_1 {
+
+	public static void main(String[] args) throws Exception{
+//		A1 a = new A1();
+//		a.method1();
+		FileOutputStream fos = new FileOutputStream("D:\\Java workplaces\\FileOutputStream/welcome.txt");
+		String data = "Welcome to Core Java Learning ";
+		byte[] b = data.getBytes();
+		fos.write(b);
+		System.out.println("Data transfered Java application to the target file D:\\Java workplaces\\FileOutputStream");
+		fos.close();
+	}
+
+}
