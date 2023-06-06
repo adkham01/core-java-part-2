@@ -1,0 +1,31 @@
+package com.IOStreams;
+
+import java.io.FileOutputStream;
+import java.util.Arrays;
+
+class A1 {
+	void method1() {
+		String data = "Adham";
+		byte[] b = data.getBytes();
+		System.out.println(Arrays.toString(b));
+	}
+}
+public class IOStreams_1 {
+
+	public static void main(String[] args) throws Exception{
+		FileOutputStream fos = new FileOutputStream("D:\\Java workplaces\\FileOutputStream/welcome.txt",false);
+		String data = "In any programming language, in any application, providing input to the Applications and \r\n"
+				+ "getting output from the Applications is essential.\r\n"
+				+ "In case of C and C++ applications, we are able to perform input and output operations by \r\n"
+				+ "using some predefined library in the form of printf(), scanf(), cin>>, cout<<,...... \r\n"
+				+ "Similarly in Java Applications, to perform input and output operations we have to use \r\n"
+				+ "streams. \r\n"
+				+ "Java has represented all the streams in the form of predefined classes in \"java.io\" \r\n"
+				+ "package.";
+		byte[] b = data.getBytes();
+		fos.write(b);
+		System.out.println("Data transfered Java application to the target file D:\\Java workplaces\\FileOutputStream");
+		fos.close();
+	}
+
+}
