@@ -3,18 +3,42 @@ package com.interview.questions;
 public class Patterns {
 
 	public static void main(String[] args) {
+		System.out.println("Pattern 1");
 		print1(5);
+		System.out.println();
+		System.out.println("Pattern 2");
 		print2(5);
+		System.out.println();
+		System.out.println("Pattern 3");
 		print3(5);
+		System.out.println();
+		System.out.println("Pattern 4");
 		print4(5);
+		System.out.println();
+		System.out.println("Pattern 5");
 		print5(5);
+		System.out.println();
+		System.out.println("Pattern 6");
 		print6(5);
+		System.out.println();
+		System.out.println("Pattern 7");
 		print7(5);
+		System.out.println();
+		System.out.println("Pattern 8");
 		print8(5);
+		System.out.println();
+		System.out.println("Pattern 9");
 		print9(5);
+		System.out.println();
+		System.out.println("Pattern 10");
 		print10(5);
+		System.out.println();
+		System.out.println("Pattern 11");
 		print11(5);
+		System.out.println();
+		System.out.println("Pattern 12");
 		print12(4);
+		System.out.println();
 
 	}
 
@@ -177,7 +201,7 @@ public class Patterns {
 			System.out.println();
 
 		}
-		int initialspace = 2;
+		byte initialspace = 2;
 		for (int i = 0; i < n - 1; i++) {
 			for (int j = 0; j < n - i - 1; j++) {
 				System.out.print("*");

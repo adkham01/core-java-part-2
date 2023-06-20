@@ -10,23 +10,21 @@ import java.util.Map;
 
 @SuppressWarnings("unused")
 public class MaxWordCount {
-	
+
 	public static String path = "C:/Users/Adham/Downloads/Arrays_Classroom_Notes.txt";
 
 	public static void main(String[] args) throws IOException {
 		Map<String, Integer> wordMap = new HashMap<>();
-		
-		try(BufferedReader reader = new BufferedReader(new FileReader(path));) 
-		{
+
+		try (BufferedReader reader = new BufferedReader(new FileReader(path));) {
 			String currentLine = reader.readLine();
-			while(currentLine != null) {
+			while (currentLine != null) {
 				String[] words = currentLine.toLowerCase().split(" ");
-				for(String word : words) {
-					if(!word.isBlank()) {
-						if(wordMap.containsKey(word)) {
-							wordMap.put(word, wordMap.get(word)+1);
-						}	
-						else {
+				for (String word : words) {
+					if (!word.isBlank()) {
+						if (wordMap.containsKey(word)) {
+							wordMap.put(word, wordMap.get(word) + 1);
+						} else {
 							wordMap.put(word, 1);
 						}
 					}
@@ -36,14 +34,13 @@ public class MaxWordCount {
 		} catch (IOException e) {
 			e.getMessage();
 		}
-		wordMap.forEach((k,v) -> System.out.println(k + " : "+v));
+		wordMap.forEach((k, v) -> System.out.println(k + " : " + v));
 
 		Map<String, Integer> newMap = new HashMap<>();
-		wordMap.entrySet().stream()
-			.filter(entry -> entry.getValue() == Collections
-				.max(wordMap.values()))
-					.forEach(e -> newMap.put(e.getKey(), e.getValue()));;
-					
+		wordMap.entrySet().stream().filter(entry -> entry.getValue() == Collections.max(wordMap.values()))
+				.forEach(e -> newMap.put(e.getKey(), e.getValue()));
+		;
+
 		System.out.println("--------------------");
 		System.out.println(newMap);
 	}

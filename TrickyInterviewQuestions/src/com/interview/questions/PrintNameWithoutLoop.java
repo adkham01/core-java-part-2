@@ -6,17 +6,13 @@ public class PrintNameWithoutLoop {
 		String name = "Adham\n";
 		name = name.repeat(1000);
 		System.out.println(name);
-		
+
 		String printName = "i";
 		printName = printName.replaceAll("i", "iiiiiiiiii");
 		printName = printName.replaceAll("i", "iiiiiiiiii");
 		printName = printName.replaceAll("i", "iiiiiiiiii");
-		
 		printName = printName.replaceAll("i", "Adham\n");
 		System.out.println(printName);
-		
-		
-		
 
 	}
 

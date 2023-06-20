@@ -10,6 +10,7 @@ public class AppRun {
 			Process pr = runtime.exec("notepad.exe");
 			Thread.sleep(4000);
 			pr.destroy();
+			System.out.println("Done.....");
 			
 		} catch (IOException e) {
 			

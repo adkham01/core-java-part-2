@@ -19,6 +19,7 @@ public class FrequencyOfAllDigits {
 			number = number / 10;
 		}
 		digitMap.forEach((k , v) -> System.out.println(k + " : " + v));
+		
 		return digitMap;
 	}
 	
