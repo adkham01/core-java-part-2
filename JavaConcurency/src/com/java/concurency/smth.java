@@ -1,8 +1,8 @@
 package com.java.concurency;
 
-public class SynchronizedExchangerMain {
+public class smth {
     public static void main(String[] args) {
-        SynchronizedExchanger exchanger = new SynchronizedExchanger();
+        adfd exchanger = new adfd();
 
         Thread thread1 = new Thread(new Runnable() {
             @Override

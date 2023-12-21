@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-class User implements Serializable {
+class User85 implements Serializable {
 	String uid;
 	String usname;
 	transient String upwd;

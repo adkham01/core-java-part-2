@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 public class SemaphoreInJava {
-	private static final transient  Semaphore semaphore = new Semaphore(4);
+	private static final transient Semaphore semaphore = new Semaphore(4);
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -27,23 +27,25 @@ public class SemaphoreInJava {
 			semaphore.release(8);
 
 			// rest processing
-			
+
 			/**
-			 * return type boolean 
-			 * Try to acquire, if no permit avilable, do not block.
+			 * return type boolean Try to acquire, if no permit avilable, do not block.
 			 * continue doing something
 			 */
 			semaphore.tryAcquire();
-			
-			
+
 			/**
 			 * Same as above bub, with TimeOut
 			 */
-			semaphore.tryAcquire(50, TimeUnit.SECONDS);
-			
+			try {
+				semaphore.tryAcquire(50, TimeUnit.SECONDS);
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
+
 			/**
-			 * return type boolean
-			 * Returns count of permits avilable
+			 * return type boolean Returns count of permits avilable
 			 */
 			semaphore.availablePermits();
 		}

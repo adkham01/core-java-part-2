@@ -11,13 +11,13 @@ class Course {
 		this.ccost = ccost;
 	}
 }
-class Student {
+class Student778 {
 	String sid;
 	String sname;
 	String saddr;
 	Course[] courses;
 	
-	public Student(String sid,String sname,String saddr,Course[] courses) {
+	public Student778(String sid,String sname,String saddr,Course[] courses) {
 		this.sid = sid;
 		this.sname = sname;
 		this.saddr = saddr;
@@ -49,8 +49,8 @@ public class CollectionFramework_3 {
 		
 		Course[] courses = {c1,c2,c3,c4};
 		
-		Student1 std1 = new Student1("S-111", "Anil", "Hyd", courses);
-		Student1 std2 = new Student1("S-222", "Adham", "Mitan", courses);
+		Student778 std1 = new Student778("S-111", "Anil", "Hyd", courses);
+		Student778 std2 = new Student778("S-222", "Adham", "Mitan", courses);
 		std1.getStudentDetails();
 		std2.getStudentDetails();
 	}

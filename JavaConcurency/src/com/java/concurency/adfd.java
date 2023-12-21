@@ -1,6 +1,6 @@
 package com.java.concurency;
 
-public class SynchronizedExchanger {
+public class adfd {
     protected Object object = null;
 
     public synchronized void setObject(Object object) {
