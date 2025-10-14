@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;arry&apos; in &apos;com.Edabit.Class_1.cons(...)&apos; to &apos;a&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;com.Edabit.Class_1.cons(int[]).arry&apos;&#x0D;&#x0A;- Renamed element: &apos;arry&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;arry&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.Edabit{Edabit_1.java[Class_1~cons~\[I@arry!409!418!415!418!\[I!0!true" name="a" references="true" stamp="1682793310724" version="1.0"/>
-</session>

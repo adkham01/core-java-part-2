@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Hello Servlets" path="/Hello_Servlets" reloadable="true" source="org.eclipse.jst.jee.server:Hello Servlets"/><Context docBase="Import_lass_into_JSP_file" path="/Import_lass_into_JSP_file" reloadable="true" source="org.eclipse.jst.jee.server:Import_lass_into_JSP_file"/><Context docBase="Forms" path="/Forms" reloadable="true" source="org.eclipse.jst.jee.server:Forms"/><Context docBase="Java_Beans" path="/Java_Beans" reloadable="true" source="org.eclipse.jst.jee.server:Java_Beans"/></Host>
+      <Context docBase="Hello Servlets" path="/Hello_Servlets" reloadable="true" source="org.eclipse.jst.jee.server:Hello Servlets"/><Context docBase="Import_lass_into_JSP_file" path="/Import_lass_into_JSP_file" reloadable="true" source="org.eclipse.jst.jee.server:Import_lass_into_JSP_file"/><Context docBase="Forms" path="/Forms" reloadable="true" source="org.eclipse.jst.jee.server:Forms"/><Context docBase="Java_Beans" path="/Java_Beans" reloadable="true" source="org.eclipse.jst.jee.server:Java_Beans"/><Context docBase="Session_Introduction" path="/Session_Introduction" reloadable="true" source="org.eclipse.jst.jee.server:Session_Introduction"/></Host>
     </Engine>
   </Service>
 </Server>
