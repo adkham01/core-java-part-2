@@ -5,7 +5,7 @@ public class EnemyShipFactory {
         EnemyShip enemyShip =  null;
 
         if(shipType.equalsIgnoreCase("u")){
-            return new UEFOEnemyShip();
+            return new UFOEnemyShip();
         }
         else if(shipType.equalsIgnoreCase("r")){
             return new RocketEnemyShip();

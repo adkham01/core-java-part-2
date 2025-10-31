@@ -1,8 +1,5 @@
 package patterns.composite;
 
-import java.util.Iterator;
-import java.util.Map;
-
 public class SongListGenerator {
     static void main() {
         SongComponent industrialMusic = new SongGroup("Industrial", "Industrial music");
